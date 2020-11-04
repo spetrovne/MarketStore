@@ -23,7 +23,11 @@ namespace MarketStore
             this.DiscountRate = 0;
         }
 
-        public string Owner { get; }
+        public string Owner
+        {
+            get { return owner; }
+            private set { owner = value; }
+        }
 
         public decimal Turnover
         {

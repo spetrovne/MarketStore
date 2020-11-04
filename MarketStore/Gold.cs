@@ -8,14 +8,14 @@ namespace MarketStore
     {
         public Gold(string owner, decimal turnover) : base(owner, turnover)
         {
-            this.DiscountRate = 2m / 100; ;
+            this.CalculateDiscountRate();
         }
        
         public override void CalculateDiscountRate()
         {
             this.DiscountRate = 2m / 100;
             var tempRate = 2;
-            var iterations = Math.Ceiling(this.Turnover / 100);
+            var iterations = Math.Floor(this.Turnover / 100);
             while (tempRate < 10 && tempRate < iterations)
             {
                 tempRate++;

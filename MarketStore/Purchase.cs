@@ -31,10 +31,11 @@ namespace MarketStore
         public override string ToString()
         {
             var theDiscount = this.CalculateDiscount(price);
-            var totalPrice = CalculatePriceAfterDiscount(price);
-            this.Discount.CalculateDiscountRate();
+            var totalPrice = CalculatePriceAfterDiscount(price);            
             var discountRate =this.Discount.DiscountRate*100;
-            var str = $"Purchase value: {this.price}" + Environment.NewLine
+            var type = this.Discount.GetType().Name;
+            var str = $"1. {type}: " + Environment.NewLine
+                + $"Purchase value: {this.price}" + Environment.NewLine
                 + $"Discount rate: {discountRate:f1}%" + Environment.NewLine
                 + $"Discount: {theDiscount:f2}" + Environment.NewLine
                 + $"Total: {totalPrice:f2}"
@@ -50,7 +51,6 @@ namespace MarketStore
 
         public decimal CalculateDiscount(decimal purchasePrice)
         {
-            Discount.CalculateDiscountRate();
             return purchasePrice * this.Discount.DiscountRate;
         }
 

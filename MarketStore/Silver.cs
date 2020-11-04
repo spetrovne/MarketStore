@@ -8,7 +8,7 @@ namespace MarketStore
     {
         public Silver(string owner, decimal turnover) : base(owner, turnover)
         {
-            this.DiscountRate = 2m / 100;
+            this.CalculateDiscountRate();//Calling the method here so that every time a new instace is made it has a proper discount rate
         }       
 
         public override void CalculateDiscountRate()
