@@ -4,49 +4,40 @@ using System.Text;
 
 namespace MarketStore
 {
-    public class DiscountCard
+    public abstract class DiscountCard
     {
-		private string owner;		
-		private decimal turnover;
-		private decimal discountRate;
+        private string owner;
+        private decimal turnover;
+        private decimal discountRate;
 
-		public decimal DiscountRate
-		{
-			get { return discountRate; }
-			set { discountRate = value; }
-		}
+        public decimal DiscountRate
+        {
+            get { return discountRate; }
+            set { discountRate = value; }
+        }
 
-		public DiscountCard( decimal turnover)
-		{
-			
-			this.Turnover = turnover;
-			
-		}
+        public DiscountCard(string owner, decimal turnover)
+        {
+            this.Owner = owner;
+            this.Turnover = turnover;
+            this.DiscountRate = 0;
+        }
 
-		public string Owner
-		{
-			get { return owner; }
-			set { owner = value; }
-		}
-	
-		public decimal Turnover
-		{
-			get { return turnover; }
-			set
-			{
-				if (value < 0)
-				{
-					throw new InvalidOperationException("The turnover can't be negative");
-				}
-				turnover = value; 
-			}
-		}
+        public string Owner { get; }
 
-		public virtual decimal CalculateDiscount(decimal purchasePrice) 
-		{
-			return purchasePrice;
-		}
+        public decimal Turnover
+        {
+            get { return turnover; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new InvalidOperationException("The turnover can't be negative");
+                }
+                turnover = value;
+            }
+        }
 
-		
-	}
+        public virtual void CalculateDiscountRate() { }
+    }
 }

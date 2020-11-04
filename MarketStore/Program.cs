@@ -6,10 +6,9 @@ namespace MarketStore
     {
         static void Main(string[] args)
         {
-
-            var bronzeCard = new Bronze(0);
-            var goldCard = new Gold(1500);
-            var silverCard = new Silver(600);
+            var bronzeCard = new Bronze("Stefan Panchev",0);
+            var goldCard = new Gold("Sasho Roman",1500);
+            var silverCard = new Silver("Nikolаоs Citiridis",600);
 
             var purchaseWithBtonze = new Purchase(150, bronzeCard);
             var purchaseWithSilver = new Purchase(850, silverCard);
@@ -18,9 +17,6 @@ namespace MarketStore
             Console.WriteLine(purchaseWithBtonze.ToString());
             Console.WriteLine(purchaseWithSilver.ToString());
             Console.WriteLine(purchaseWithGold.ToString());
-
-
-
         }
     }
 }

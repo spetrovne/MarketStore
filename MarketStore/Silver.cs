@@ -6,33 +6,19 @@ namespace MarketStore
 {
     public class Silver : DiscountCard
     {
-        private decimal discountRate;
-
-        public Silver(decimal turnover) : base( turnover)
+        public Silver(string owner, decimal turnover) : base(owner, turnover)
         {
-            base.DiscountRate = this.DiscountRate;
-        }
+            this.DiscountRate = 2m / 100;
+        }       
 
-        public new decimal DiscountRate
+        public override void CalculateDiscountRate()
         {
-            get 
+            this.DiscountRate = 2m / 100;
+
+            if (this.Turnover >= 300)
             {
-                this.discountRate = 2m / 100;
-
-                if (this.Turnover >= 300)
-                {
-                    this.discountRate = 3.5m / 100;
-                }
-
-                return this.discountRate; 
+                this.DiscountRate = 3.5m / 100;
             }
-           
-           
-        }
-
-        public override decimal CalculateDiscount(decimal purchasePrice)
-        {
-            return purchasePrice * this.DiscountRate;
         }
     }
 }

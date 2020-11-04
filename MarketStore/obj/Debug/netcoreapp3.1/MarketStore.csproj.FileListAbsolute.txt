@@ -1,0 +1,13 @@
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\bin\Debug\netcoreapp3.1\MarketStore.exe
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\bin\Debug\netcoreapp3.1\MarketStore.deps.json
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\bin\Debug\netcoreapp3.1\MarketStore.runtimeconfig.json
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\bin\Debug\netcoreapp3.1\MarketStore.runtimeconfig.dev.json
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\bin\Debug\netcoreapp3.1\MarketStore.dll
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\bin\Debug\netcoreapp3.1\MarketStore.pdb
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.csprojAssemblyReference.cache
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.csproj.CoreCompileInputs.cache
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.AssemblyInfoInputs.cache
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.AssemblyInfo.cs
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.dll
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.pdb
+F:\SoftUni-LabEx\Programista\MarketStore\MarketStore\obj\Debug\netcoreapp3.1\MarketStore.genruntimeconfig.cache
